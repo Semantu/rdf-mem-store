@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "license": "MIT",
   "description": "In-memory RDF store and query resolver for @_linked/core",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Semantu/rdf-mem-store.git"
+  },
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "exports": {
