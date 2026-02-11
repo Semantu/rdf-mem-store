@@ -1,6 +1,6 @@
 {
   "name": "@_linked/rdf-mem-store",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "description": "In-memory RDF store and query resolver for @_linked/core",
   "repository": {
