@@ -18,7 +18,8 @@ import {InMemoryStore, NamedNode, Literal} from '@_linked/rdf-mem-store';
 const store = new InMemoryStore();
 LinkedStorage.setDefaultStore(store);
 
-// 2. Create nodes and data
+// 2. Create nodes and data — all nodes and quads are global singletons,
+//    automatically available to every InMemoryStore
 const alice = NamedNode.getOrCreate('https://example.org/alice');
 const name = NamedNode.getOrCreate('https://schema.org/name');
 alice.setValue(name, 'Alice');
