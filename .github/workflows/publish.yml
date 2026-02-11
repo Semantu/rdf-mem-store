@@ -103,6 +103,6 @@ jobs:
           # Append dev prerelease identifier
           DEV_VERSION="${NEXT_VERSION}-next.$(date +%Y%m%d%H%M%S)"
           npm version "$DEV_VERSION" --no-git-tag-version
-          npm publish --tag next --access public --provenance
+          npm publish --tag next
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
