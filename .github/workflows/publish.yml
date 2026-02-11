@@ -95,9 +95,12 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Publish dev release
+      - name: Publish next release
         run: |
-          VERSION=$(node -p "require('./package.json').version")
-          DEV_VERSION="${VERSION}-dev.$(date +%Y%m%d%H%M%S)"
+          # Apply pending changesets to get the next version (without committing)
+          npx changeset version
+          NEXT_VERSION=$(node -p "require('./package.json').version")
+          # Append dev prerelease identifier
+          DEV_VERSION="${NEXT_VERSION}-next.$(date +%Y%m%d%H%M%S)"
           npm version "$DEV_VERSION" --no-git-tag-version
-          npm publish --tag dev --access public --provenance
+          npm publish --tag next --access public --provenance
