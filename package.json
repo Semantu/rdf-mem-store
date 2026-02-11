@@ -28,6 +28,10 @@
       ]
     }
   },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "files": [
     "lib",
     "README.md",
