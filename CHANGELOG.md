@@ -4,7 +4,7 @@
 
 ### Patch Changes
 
-- [#15](https://github.com/Semantu/rdf-mem-store/pull/15) [`496f803`](https://github.com/Semantu/rdf-mem-store/commit/496f80371914faab20cd098129c039015d8ce170) Thanks [@flyon](https://github.com/flyon)! - update core dependency
+- [#15](https://github.com/Semantu/rdf-mem-store/pull/15) [`496f803`](https://github.com/Semantu/rdf-mem-store/commit/496f80371914faab20cd098129c039015d8ce170) - update core dependency
 
 ## 1.0.0
 
